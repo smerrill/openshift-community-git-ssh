@@ -1,0 +1,5 @@
+---
+snapshot_exclusions: []
+locked_files: []
+processed_templates:
+- '**/*.erb'

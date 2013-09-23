@@ -1,0 +1,17 @@
+---
+Name: gitssh
+Cartridge-Short-Name: GITSSH
+Architecture: noarch
+Display-Name: Git SSH Helper
+Description: Utility
+Version: '0.0.1'
+Cartridge-Version: 0.0.1
+Cartridge-Vendor: phase2
+License: BSD
+Categories:
+- embedded
+Provides:
+- git-ssh
+Scaling:
+  Min: 1
+  Max: 1
