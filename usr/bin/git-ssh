@@ -1,3 +1,9 @@
 #!/bin/bash
 
-ssh -oStrictHostKeyChecking=no $@
+KEY="${OPENSHIFT_DATA_DIR}/git-ssh/id_rsa"
+
+[ -f $KEY ] && {
+  ssh -oStrictHostKeyChecking=no -i$KEY $@
+} || {
+  ssh -oStrictHostKeyChecking=no $@
+}

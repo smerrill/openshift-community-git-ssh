@@ -1,3 +1,4 @@
 #!/bin/bash -e
 
 touch $HOME/.netrc
+mkdir $OPENSHIFT_DATA_DIR/git-ssh
