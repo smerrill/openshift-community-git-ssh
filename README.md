@@ -10,6 +10,6 @@ The script will cause all git operations to SSH command with the `StrictHostKeyC
 
 ## Keys and Credentials
 
-You can put an SSH key into `$OPENSHIFT\_DATA\_DIR/git-ssh/id_rsa` and the `git-ssh` binary will use it.
+You can put an SSH key into `$OPENSHIFT_DATA_DIR/git-ssh/id_rsa` and the `git-ssh` binary will use it.
 
 Finally, for good measure, it will unlock ~/.netrc, in case your Jenkins builds need to store credentials there.
