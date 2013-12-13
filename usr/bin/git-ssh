@@ -3,7 +3,7 @@
 KEY="${OPENSHIFT_DATA_DIR}/git-ssh/id_rsa"
 
 [ -f $KEY ] && {
-  ssh -oStrictHostKeyChecking=no -i$KEY $@
+  ssh -o UserKnownHostsFile=/dev/null  -o StrictHostKeyChecking=no -i$KEY $@
 } || {
-  ssh -oStrictHostKeyChecking=no $@
+  ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no $@
 }
